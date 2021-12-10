@@ -1,7 +1,20 @@
-/*var movie = 1;
-var daysRented = 9;
 
-console.log(movie * daysRented)*/
+var sample = "Hello Codeup" +
+    console.log(sample.length);
+console.log(sample.toLowerCase());
+sample = sample + " student";
+console.log(sample);
+console.log(sample.replace(searchValue: "Studentg", replaceValue: "Class"))
+console.log(sample.indexOf("c"));
+console.log(sample.indexOf());
+console.log(sample.substring(sample.indexOf('C'), sample.indexOf('S')))
+/*let littleMermaid
+let brotherBear= 5
+let hercules = 1
+let dailyRentalPrice = 3
+
+let estimatedTotal = (littleMermaid * dailyRentalPrice) +(brotherBear * dailyRentalPrice) + (hercules * dailyRentalPrice)
+console.log('You can expect to pay about $' + estimatedTotal + 'dollars');*/
 /*
 let google = 400
 let amazon = 380
@@ -40,7 +53,7 @@ the password must not include the username
 the username must be no more than 20 characters
 neither the username or password can start or end with whitespace*/
 
-    function functionName() {
+    /*function functionName() {
 
         var username = 'codeup'.trim();
         var password = 'codeup'.trim();
@@ -51,4 +64,4 @@ neither the username or password can start or end with whitespace*/
         return false;
     }
 
-console.log(functionName())
+console.log(functionName())*/
