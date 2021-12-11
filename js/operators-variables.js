@@ -1,13 +1,14 @@
 
-var sample = "Hello Codeup" +
-    console.log(sample.length);
+var sample = "Hello Codeup";
+
+console.log(sample.length);
 console.log(sample.toLowerCase());
-sample = sample + " student";
-console.log(sample);
+console.log(sample.toUpperCase());
+console.log(sample.concat(" Students."));
 console.log(sample.replace(searchValue: "Studentg", replaceValue: "Class"))
 console.log(sample.indexOf("c"));
-console.log(sample.indexOf());
-console.log(sample.substring(sample.indexOf('C'), sample.indexOf('S')))
+console.log(sample.indexOf("C"));
+console.log(sample.substring(sample.indexOf('C'), lenth: 6))
 /*let littleMermaid
 let brotherBear= 5
 let hercules = 1
