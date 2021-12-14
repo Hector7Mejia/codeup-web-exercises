@@ -17,6 +17,7 @@ if (creditScore >= 680 && cashOnHand >=4000) {
 }
 Declare a function called 'isFive' that takes in an input and returns true if that input is the number five. Otherwise it should return false.
     */
+/*
 function isFive(five)
 
 let num = "five"{
@@ -24,3 +25,11 @@ let num = "five"{
     return !!(num = "five");
 }
 isFive(num)
+*/
+function isMultipleOfThree(x) {
+    if (x % 3 === 3) {
+    return true;
+} else{
+    return false;
+}
+}
