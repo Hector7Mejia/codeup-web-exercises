@@ -7,5 +7,5 @@ var answer = prompt("Enter your number or word: ");
         alert("The number is odd.")
     }
 
-    
+
     console.log(answer);

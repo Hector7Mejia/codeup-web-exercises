@@ -161,10 +161,22 @@ console.log(calculateTotal(calculate,luckyNumber))
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-var confirmed = confirm('Would you like to enter a number');
-console.log(confirmed); // will be either true or false
-if(confirmed){
-    alert("The number is even or odd")
-    alert("num plus 100")
-    alert("number is negative")
+alert('Would you like to enter a number');
+var number = parseInt(prompt("Whats your number"));
+function userNumber (number) {
+    if (number % 2 === 0) {
+        alert(number + "is even!");
+    } else {
+        alert(number + "is odd!")
+    }
+    if (number >= 100) {
+        alert(number + "is greater than 100!")
+    } else {
+        alert (number + "is less than 100!")
+    }
+    if (number > 0){
+        alert(number + "is positive")
+    } else {
+        alert (number + "is negative")
+    }
 }
