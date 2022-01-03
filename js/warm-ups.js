@@ -1,4 +1,4 @@
-“Use strict”;
+
 /*
 4k or 10k with cash in cash
 5k 720
@@ -26,10 +26,53 @@ let num = "five"{
 }
 isFive(num)
 */
-function isMultipleOfThree(x) {
-    if (x % 3 === 3) {
-    return true;
-} else{
-    return false;
+// function isMultipleOfThree(x) {
+//     if (x % 3 === 3) {
+//     return true;
+// } else{
+//     return false;
+// }
+// }
+
+// let counter = 0; // starting point
+
+/*
+
+var i = 0;
+while(i < 24) {
+    i += 2;
+    console.log(i);
 }
+*/
+/*
+
+function add(num1, num2){
+    return (num1 + num2);
 }
+
+console.log(add(1,2))
+
+function square(numToSqr){
+    return (numToSqr * numToSqr)
+}
+
+console.log(square(7))
+
+function sumOfSquares(a,b){
+    return add(square(a), square(b));
+}
+
+console.log(" 3 squared + 2 squared = " + sumOfSquares(3,2));*/
+
+function getFizzBuzz(startingNum){
+    if (startingNum % 3 === 0 && startingNum % 5 === 0) {
+        return("FIZZ BUZZ")
+    }
+    if (startingNum % 3 === 0 ) {
+        console.log("Fizz")
+    }   if (startingNum % 5 === 0){
+        console.log("Buzz")
+    }
+}
+
+console.log(getFizzBuzz(5));
