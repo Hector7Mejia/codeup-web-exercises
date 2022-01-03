@@ -64,15 +64,41 @@ function sumOfSquares(a,b){
 
 console.log(" 3 squared + 2 squared = " + sumOfSquares(3,2));*/
 
-function getFizzBuzz(startingNum){
+/*function getFizzBuzz(startingNum) {
     if (startingNum % 3 === 0 && startingNum % 5 === 0) {
         return("FIZZ BUZZ")
     }
     if (startingNum % 3 === 0 ) {
         console.log("Fizz")
-    }   if (startingNum % 5 === 0){
+    }
+    if (startingNum % 5 === 0){
         console.log("Buzz")
+    }
+     else {
+        return "that's not a good fizz"
     }
 }
 
 console.log(getFizzBuzz(5));
+
+ */
+/*
+function getPassword() {
+    let correctPassword = "password"
+    let userInput = prompt("Enter the password")
+    while(userInput !== password){
+        alert("Thats not the right password! Try again")
+        userInput = prompt("Enter the password please")
+    }
+}*/
+var counter = 0;
+function getMeaningOfLife(meaningfulNum) {
+    while (counter !== meaningfulNum) {
+        counter++
+    }
+        console.log("The meaning of life, the universe, and everything is " + meaningfulNum);
+    if(counter === 42) {
+        console.log("Did you bring a towel?")
+    }
+}
+getMeaningOfLife(100);
