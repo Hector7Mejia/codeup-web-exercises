@@ -11,7 +11,13 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+    let person = {
+        firstName: "Hector",
+        lastName: "Mejia"
+    };
 
+    console.log(person.firstName);
+    console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -22,6 +28,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+    person.sayHello = function () {
+        return("Oh, hello! " + this.firstName + " " + this.lastName);
+    };
+
+    console.log(person.sayHello());
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -36,12 +47,22 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+     var shoppers = [
+         {name: 'Cameron', amount: 180},
+         {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
 
+     shopper.forEach(function (shoppers) {
+         let discountedAmount = shopper.amount;
+         let discount = 0;
+
+         if (shopper.amount > 200)  {
+             discount = 12;
+             dicountedAmount = .88 * shopper.amount
+             /*console.log(`Shopper: ${shopper.name)Amount Spent:*/
+         }
+     })
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -54,6 +75,22 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    let books = [
+        {
+            title: "Dune",
+            author: {
+                firstName: "",
+                lastName: ""
+            }
+        }
+    ]
+
+    books.forEach(functino (boo, index) {
+        console.log('Book # ' + (index i))
+        console.log()
+        console.log()
+
+    })
 
     /**
      * TODO:

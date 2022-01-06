@@ -120,6 +120,7 @@ function myFirstForLoop(numOfIterations){
 }
 */
 
+/*
 myFirstForLoop(5);
 
 // TODO: MINI EXERCISE
@@ -135,12 +136,28 @@ myFirstForLoop(5);
 //      -> Once the user enters the correct password, use the 'break' keyword to end the loop
 //      -> After the loop concludes, alert the use they have entered the correct password
 
-/*
+/!*
 Mini Exercise
 -Create an array with five strings representing your favorite artists (music or otherwise) and store it in a variable called favoriteArtists
 -Write a function that accepts an array as a parameter and...
 -> logs the first, third, and last elements of that array
--Invoke your function and pass favoriteArtists as an argument*/
+-Invoke your function and pass favoriteArtists as an argument*!/
 
 
-Artists["AS", "Leon"]
+Artists["AS", "Leon"]*/
+
+
+"use strict";
+
+var movies = {};
+movies.title = "Pulp Fiction";
+movies.rating = "Excellent";
+
+// create a logMakeModel method on the car object
+movies.logMakeModel = function () {
+    console.log("Movie title is: " + this.title);
+    console.log("Movie rating is: " + this.rating);
+};
+
+// log the make/model
+movies.logMakeModel();
