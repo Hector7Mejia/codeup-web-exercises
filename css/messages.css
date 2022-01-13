@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message {
+    border: 50px black;
+    margin: 5px auto;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message-info {
+background-color: rgba(209, 222, 252, .8);
+    color: dodgerblue;
+}
+
+.message-success {
+    background-color: rgba(214, 242, 220, .9);
+    color: forestgreen;
+}
+
+.message-success {
+    background-color: rgba(252, 251, 206, .8);
+    color: dodgerblue;
+}
+
+.message-error {
+    background-color: rgba(244, 212, 215, .8);
+    color: dodgerblue;
+}

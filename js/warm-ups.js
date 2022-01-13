@@ -147,6 +147,7 @@ Mini Exercise
 Artists["AS", "Leon"]*/
 
 
+/*
 "use strict";
 
 var movies = {};
@@ -160,4 +161,13 @@ movies.logMakeModel = function () {
 };
 
 // log the make/model
-movies.logMakeModel();
+movies.logMakeModel();*/
+
+let concateString = ["one", "two", "three"]
+function arrayToString(myArray) {
+    for (let i = 0; i < myArray.length){
+
+    }
+}
+
+console.log()
