@@ -163,6 +163,7 @@ movies.logMakeModel = function () {
 // log the make/model
 movies.logMakeModel();*/
 
+/*
 let concateString = ["one", "two", "three"]
 function arrayToString(myArray) {
     for (let i = 0; i < myArray.length){
@@ -170,4 +171,21 @@ function arrayToString(myArray) {
     }
 }
 
-console.log()
+console.log()*/
+/*
+
+avaScript Warmup:
+    Define a function named removeAll(array, value) that takes in two arguments. The first argument should be an array and the second argument should be a value you wish to remove
+Given the following array as an argument (do not define this array inside your function - pass it in as an argument)
+var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
+removeAll(bugs, "ant") should return ["mosquito", "scorpion", "mosquito", "typo", "reference error", "type error"]
+removeAll(bugs, "mosquito") should return ["ant", "scorpion", "ant", "ant", "typo", "reference error", "type error"]
+removeAll(bugs, "roach") should return the original array b/c “roach” has no occurrances.*/
+
+/*
+function removeAll(toBeRemoved) {
+    for (let i = 0; i < myArray.length; i++) {
+
+    }
+}
+*/
