@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+
+}
+
+nav ul li:nth-child(5) {
+    margin: auto;
+    font-size: 3em;
+
+}
+
+nav {
+    background: grey;
+    width: 100%;
+
+}
+ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 1em;
+}
+nav a:hover {
+    color: blue;
+}
+
+.nav
