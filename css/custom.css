@@ -1,0 +1,41 @@
+.form-control mr-sm-2 {
+    margin: 100px
+}
+/*.display-4 {
+background-image: url(https://java.codeup.com/examples/bootstrap/pizza.png); background-size: 100%;">
+}*/
+
+.jumbotron {
+    background-image: url("../img/pizza.png");
+    background-size: cover;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.display-4 {
+display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    opacity: .7;
+}
+
+.card-header{
+    background-color: teal;
+    color: white;
+}
+
+.card-footy {
+    display: flex;
+    justify-content: end;
+
+}
+
+.card {
+    border: lightgrey;
+    margin: 1em;
+}
+
+
+
+
+
