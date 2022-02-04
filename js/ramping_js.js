@@ -23,12 +23,19 @@
 // returns "second" if the second parameter is longer
 // returns "neither" if they are the same length
 // returns false if either or both of the parameters are not strings
+//
+// function whichStringIsLonger(word1, word2) {
+//     if(word1.length > word2.length) {
+//         return "first";
+//     }
+//     if(word1.length < word2.length) {
+//         return "second";
+//     }
+// }
+//
+// console.log(whichStringIsLonger('two','by'));
 
-function whichStringIsLonger(word1, word2) {
-    if(word1.length > word2.length) {
-        return "first";
-    }
-    if(word1.length < word2.length) {
-        return "second";
-    }
+function convertLowHighToObject(highLow) {
+
+
 }

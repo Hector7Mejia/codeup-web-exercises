@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+
+
+    // let konamiCode = [5, 5, 5, 5, 5];
+    // let konamiPosition = 0;
+    //
+    // $(document).keyup(function(event){
+    //     let key = event.keyCode
+    //     if (key === konamiCode[konamiPosition])
+    //         konamiPosition++;
+    //      console.log(konamiPosition);
+    //      console.log(key)
+    //     if(key === 53 && konamiPosition === 5)
+    //     alert('You released a key');
+    // });
+
+    // var inputs = $('#formID').find('input[type="text"]');
+    // inputs.keyup(function() {
+    //     console.log($(this));
+    // });
+
+    // $(document).keyup(function(event) {
+    //
+    //     alert('You released a key');
+    // });
+
+    var keyCodes = [], konamiString = "38,38";
+    $(document).keydown(function(e) {
+        keyCodes.push( e.keyCode );
+        if (keyCodes.toString().indexOf(konamiString) >= 0){
+            $(document).unbind('keydown',arguments.callee);
+
+            // do something cool here
+            alert('You released a key');
+        }
+    });
+</script>
+<br>
+<br>
+<div>
+    <h1>Press and release a key from the keyboard </h1>
+</div>
+</body>
+</html>
