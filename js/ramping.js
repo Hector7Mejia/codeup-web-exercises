@@ -35,7 +35,46 @@
 //
 // console.log(whichStringIsLonger('two','by'));
 
-function convertLowHighToObject(highLow) {
+// function convertLowHighToObject(highLow) {
+//
+// }
 
+// function randomTest() {
+//     var min = 0;
+//     var max = 5;
+//     var random = Math.random() * (+max - +min) + +min;
+//     console.log("Random Number Generated : " + random);
+// }
+//
+// randomTest();
 
-}
+var cars = [
+    {
+        make: "Toyota",
+        model: "Camry",
+        features: ["Automatic Windows", "Bluetooth Connectivity", "GPS Navigation"],
+        owner: {
+            name: "Jane Doe",
+            age: 30
+        }
+    },
+    {
+        make: "Honda",
+        model: "Accord",
+        features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio"],
+        owner: {
+            name: "John Doe",
+            age: 31
+        }
+    }
+];
+
+console.log("The first car is a " + cars[0].make + " " + cars[0].model + ".");
+console.log("The owner of the second car is " + cars[1].owner.name + ".");
+
+console.log("Here are all the features of all the cars:");
+cars.forEach(function(cars) {
+    cars.features.forEach(function(feature) {
+        console.log(feature);
+    });
+});

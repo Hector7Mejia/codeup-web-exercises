@@ -50,19 +50,21 @@
      var shoppers = [
          {name: 'Cameron', amount: 180},
          {name: 'Ryan', amount: 250},
-         {name: 'George', amount: 320}
+         {name: 'George', amount: 320},
+        {name: 'bob', amount: 120},
      ];
 
-     shopper.forEach(function (shoppers) {
-         let discountedAmount = shopper.amount;
-         let discount = 0;
+     shoppers.forEach(function (shoppers) {
 
-         if (shopper.amount > 200)  {
-             discount = 12;
-             dicountedAmount = .88 * shopper.amount
-             /*console.log(`Shopper: ${shopper.name)Amount Spent:*/
+         if (shoppers.amount <= 200) {
+             console.log(shoppers.name + " will have to pay $" + shoppers.amount + " with no discount until total amount is over $200");
          }
-     })
+
+         else {
+            let discountedAmount = .88 * shoppers.amount
+             console.log(shoppers.name + "'s original price was $" + shoppers.amount + " , and the discounted price is $" + discountedAmount);
+         }
+     });
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -75,22 +77,62 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    let books = [
+
+    var books = [
         {
-            title: "Dune",
+            title: "Zen and the Art of Motorcycle Maintenance",
+            rating: "4.1",
+            published: "1974",
             author: {
-                firstName: "",
-                lastName: ""
+                firstName: "Robert",
+                lastName: "Pirsig",
+            }
+        },
+        {
+            title: "Letters from a Stoic",
+            rating: "3.8",
+            published: "c. 65 AD",
+            author: {
+                firstName: "Lucius",
+                lastName: "Seneca",
+            }
+        },
+        {
+            title: "Meditations",
+            rating: "4.5",
+            published: "161–180 CE",
+            author: {
+                firstName: "Marcus",
+                lastName: "Aurelius",
+            }
+        },
+        {
+            title: "TDune",
+            rating: "4.0",
+            published: "1965",
+            author: {
+                firstName: "Frank",
+                lastName: " Herbert",
+            }
+        },
+        {
+            title: "The Hitchhiker's Guide to the Galaxy",
+            rating: "3.6",
+            published: "1975",
+            author: {
+                firstName: "Douglas",
+                lastName: "Adams",
             }
         }
-    ]
+    ];
 
-    books.forEach(functino (boo, index) {
-        console.log('Book # ' + (index i))
-        console.log()
-        console.log()
 
-    })
+    // books.forEach(functino (boo, index))
+    //     console.log('Book # ' + index i)
+    //     console.log()
+    //     console.log()
+    //
+    // )
 
     /**
      * TODO:
@@ -116,6 +158,12 @@
      *      ---
      *      ...
      */
+
+
+        books.forEach(function(books) {
+            console.log("The the title of the book is " + books.title);
+            console.log("The owner of the book is " + books.author.firstName + ".");
+    });
 
     /**
      * Bonus:
