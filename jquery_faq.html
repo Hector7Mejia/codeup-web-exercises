@@ -35,6 +35,32 @@
     <dt>Owlman</dt>
     <dd>A giant owl-like creature.</dd>
 </dl>
+
+<button type="button" id="parks-button">Click Me!</button>
+<div id="national-parks-heading1">
+<h3 id="national-parks-heading">National Parks</h3>
+<ul class="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li class="last-li">Everglades</li>
+</ul>
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li class="last-li">Enchanted Rock</li>
+</ul>
+<h3>Best Parks In Texas</h3>
+<ul id="best-parks-texas">
+    <li>Reimers Ranch</li>
+    <li>Big bend</li>
+    <li class="last-li">Enchanted Rock</li>
+</ul>
+</div>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
@@ -42,9 +68,26 @@
     $(document).ready(function() {
         $('#highlight-important').click(function(event) {
             event.preventDefault();
-            $('.important').toggleClass('highlighted');
+            $('.national-parks').toggleClass('highlighted');
         });
     });
+
+    $(document).ready(function() {
+        $('#parks-button').click(function(event) {
+            event.preventDefault();
+            $(".last-li").css('background-color', 'yellow');
+        });
+    });
+
+    $(document).ready(function() {
+        $("h3").click(function(event) {
+            event.preventDefault();
+            $('#national-parks-heading1').children().css('background-color', 'salmon');
+
+        });
+    });
+
+
 </script>
 </body>
 </html>

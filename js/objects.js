@@ -107,7 +107,8 @@
             }
         },
         {
-            title: "TDune",
+            title: "Dune",
+            first: "Dune",
             rating: "4.0",
             published: "1965",
             author: {
@@ -125,14 +126,6 @@
             }
         }
     ];
-
-
-    // books.forEach(functino (boo, index))
-    //     console.log('Book # ' + index i)
-    //     console.log()
-    //     console.log()
-    //
-    // )
 
     /**
      * TODO:
@@ -160,11 +153,11 @@
      */
 
 
-        books.forEach(function(books) {
-            console.log("The the title of the book is " + books.title);
-            console.log("The owner of the book is " + books.author.firstName + ".");
-    });
 
+            books.forEach(function(item, index) {
+                console.log("The title of book " + index + " is " + item.title)
+
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -176,4 +169,10 @@
      *   `showBookInfo` function.
      */
 
+    function createBook (title, author) {
+        let books = {};
+        books.title = title;
+        books.author = author;
+        return books;
+    }
 })();
