@@ -1,0 +1,39 @@
+var data = {
+"stylist_1": [{
+"Address": "1 Stn Main",
+"Phone": "403-990-9033"
+}, {
+"Address": "474 Cirrus Rd",
+"Phone": "403-995-3243"
+}, {
+"Address": "1591 Stn St",
+"Phone": "403-982-8893"
+}],
+"stylist_2": [{
+"Address": "219 Welch Blvd",
+"Phone": "587-436-3171"
+}, {
+"Address": "374 Main Rd",
+"Phone": "587-315-9431"
+}, {
+"Address": "564 Main Rd",
+"Phone": "403-938-9983"
+}]
+}
+
+var stylist1Addresses = [];
+
+for (var i = 0; i < data.stylist_1.length; i++) {
+stylist1Addresses.push(data.stylist_1[i]);
+
+var temp = document.createElement("div");
+temp.className = "unit";
+temp.innerHTML = stylist1Addresses[i].Address;
+document.getElementById("list").appendChild(temp);
+}
+console.log(stylist1Addresses);
+.unit:nth-child(odd) {
+background: rgba(0, 0, 0, 0.05);
+}
+<div id="list"></div>
+<div id="list"></div>
