@@ -34,7 +34,7 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
-        zoom: 10,
+        zoom: 15,
         center: [-98.4916, 29.4252]
     });
 
@@ -64,6 +64,10 @@
     // how you call the functions above
     // getMarker([000.00,00.00])
     // .setPopup(getPopup("message´"));
+    var popup = new mapboxgl.Popup()
+        .setLngLat([-98.489615, 29.426827])
+        .setHTML("<p>Codeup Rocks!</p>")
+        .addTo(map)
 
 
 </script>
