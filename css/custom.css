@@ -1,9 +1,9 @@
 .form-control mr-sm-2 {
     margin: 100px
 }
-/*.display-4 {
+.display-4 {
 background-image: url(https://java.codeup.com/examples/bootstrap/pizza.png); background-size: 100%;">
-}*/
+}
 
 .jumbotron {
     background-image: url("../img/pizza.png");
@@ -12,28 +12,41 @@ background-image: url(https://java.codeup.com/examples/bootstrap/pizza.png); bac
     margin-bottom: 1em;
 }
 
-.display-4 {
-display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-    opacity: .7;
+li {
+    list-style: none;
+    text-align: left;
 }
 
-.card-header{
-    background-color: teal;
-    color: white;
+.my-form-ul {
+    margin-left: 20px;
+    padding: 0px;
 }
 
-.card-footy {
-    display: flex;
-    justify-content: end;
-
+.next-div {
+    text-align: right;
 }
+/*.display-4 {*/
+/*display: flex;*/
+/*    justify-content: center;*/
+/*    background-color: whitesmoke;*/
+/*    opacity: .7;*/
+/*}*/
 
-.card {
-    border: lightgrey;
-    margin: 1em;
-}
+/*.card-header{*/
+/*    background-color: teal;*/
+/*    color: white;*/
+/*}*/
+
+/*.card-footy {*/
+/*    display: flex;*/
+/*    justify-content: end;*/
+
+/*}*/
+
+/*.card {*/
+/*    border: lightgrey;*/
+/*    margin: 1em;*/
+/*}*/
 
 
 

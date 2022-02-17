@@ -9,95 +9,178 @@
     <title>Pizza!</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Pizza world</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">Pizza World</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order Online</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Menu</a>
             </li>
-            <li>
-                <input class="form-control mr-sm-2" type="Zip code" placeholder="Zip code" aria-label="Zip code">
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"><i class="far fa-meh"></i></a>
+
             </li>
-            <li>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you! <i class="fas fa-pizza-slice"></i></button>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
             </li>
         </ul>
-        <span class="navbar-text">
-            <i class="fas fa-skiing"></i>
-      Sign up
-    </span>
     </div>
 </nav>
-<div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-4">Welcome to Pizza World!</h1>
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid pizza-bg">
+        <div class="container no-padding">
+            <!--            <div class="pizza-bg">-->
+            <h1 class="pizza-banner">Welcome to Pizza World!!!</h1>
+            <!--            </div>-->
         </div>
     </div>
+
     <h2>Build your own pizza!</h2>
+
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#"><span class="badge badge-secondary">1</span>Size and Crust</a>
+            <a class="nav-link active" id="size-tab" data-toggle="tab" href="#size-page" ><span class="badge badge-secondary">1</span> Size and crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-secondary">2</span>Cheese and Sauce</a>
+            <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese-page"><span class="badge badge-secondary">2</span> Cheese and Sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-secondary">3</span>Toppings</a>
+            <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings-page"><span class="badge badge-secondary">3</span> Toppings</a>
         </li>
     </ul>
-    <div class="card">
-        <div class="card-header">
-            Choose size and crust
-        </div>
-        <div class="card1" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Hand Tossed</li>
-                <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-                <div class="list-group-item">
-                    <input class="form-check-input" type="radio" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Small (10")
-                    </label>
-                </div>
-                <div class="list-group-item">
-                    <input class="form-check-input" type="radio" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Medium (12")
-                    </label>
-                </div>
-                <div class="card1" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Crispy Thin</li>
-                        <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
-                        <div class="list-group-item">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Medium (12")
-                            </label>
-                        </div>
-                        <div class="list-group-item">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Large (14")
-                            </label>
-                        </div>
 
 
-            </ul>
+    <div class="card text-left tab-pane fade show active" id="size-page">
+        <div class="card-header my-card-header" >
+            Choose size and crust:
         </div>
-        <div class="card-footy">
-            <a href="#" class="btn btn-primary">Next Step</a>
+        <div class="card-body">
+
+            <div class="card text-center">
+                <div class="card-header text-left">
+                    Hand Tossed
+                </div>
+                <div class="card-body">
+                    <p class="text-left">
+                        Garlic-seasoned crust...
+                    </p>
+
+                    <div class="my-hr"></div>
+
+                    <ul class="my-form-ul">
+                        <li>
+                            <input class="form-check-input my-form-radios" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Small 10"
+                            </label>
+                        </li>
+                        <div class="my-hr"></div>
+                        <li class="last-form-li">
+                            <input class="form-check-input my-form-radios" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Medium 12"
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card text-center">
+                <div class="card-header text-left">
+                    Crispy Thin
+                </div>
+                <div class="card-body">
+                    <p class="text-left">
+                        Thin enough for...
+                    </p>
+
+                    <div class="my-hr"></div>
+
+                    <ul class="my-form-ul">
+                        <li>
+                            <input class="form-check-input my-form-radios" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Medium 12"
+                            </label>
+                        </li>
+                        <div class="my-hr"></div>
+                        <li class="last-form-li">
+                            <input class="form-check-input my-form-radios" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                                Large 14"
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <div>
+                <button type="button" class="btn btn-primary my-next-step">Next Step ></button>
+            </div>
         </div>
     </div>
 
+    <div class="card text-left tab-pane fade" id="cheese-page">
+        <div class="card-header my-card-header" >
+            <div class="card-body">
+                Cheese goes here
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-left tab-pane fade" id="toppings-page">
+        <div class="card-header my-card-header" >
+            <div class="card-body">
+                Toppings goes here
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/bfaa558caa.js" crossorigin="anonymous"></script>
+<!-- Your custom JS goes here -->
+
 </body>
 </html>
+

@@ -29,7 +29,7 @@
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        let mainHeader = document.querySelector('#main-heading');
+        let mainHeader = document.querySelector('#main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         mainHeader.innerHTML = "JavaScript is Cool";
@@ -39,25 +39,28 @@
 
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color = 'blue';
-        // TODO: Uncomment the next line and get all list items
+        // // TODO: Uncomment the next line and get all list items
         let listItems = document.querySelector('li');
 
-        // TODO: Set text color on every other list item to grey
+        // // TODO: Set text color on every other list item to grey
         for(let i = 0; i < listItems.length; i+=2) {
-        listItems[i].style.color = 'grey';
+            listItems.setAttribute("class", "thisss");
+            let list = document.querySelector(".thisss")
+            list.style.color = 'red';
         }
         // TODO: Set text color of li with dbid = 1 to blue
-        listItems[0].style.color = 'red';
+        //  listItems[0].style.color = 'blue';
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        let subParagraphs = document.querySelector(".sub-paragraph");
+        let sub = document.querySelector(".sub-paragraph");
 
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs.forEach(function(paragraph) {
-            paragraph.innerHTML = "Mission Accomplished!"
-        });
+
+        sub.innerHTML = "Mission Accomplished!";
+
     })();
 </script>
+
 </body>
 </html>
