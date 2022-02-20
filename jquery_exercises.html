@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <title>Curriculum Code Sample</title>
@@ -16,6 +16,7 @@
     <li id="second" class="codeup">This is not my opinion</li>
     <li id="third" class="codeup">This is your opinion</li>
 </ul>
+    <p>Also a test</p>
 </div>
 
 <script src="js/jquery-2.2.4.js"></script>
@@ -26,9 +27,20 @@
     //     alert(firstP);
     // // });
     // $('.codeup').css('border', '1px solid #F00');
-    $('li',).css('font-size', '20px');
-    $('h1, p, li').css('background-color', "yellow");
+    // $('li',).css('font-size', '20px');
+    // $('h1, p, li').css('background-color', "yellow");
+    $('p').dblclick(function(e) {
+        $(this).css('font-size', '18px');
+    });
 
+    $('li').hover(
+        function() {
+            $(this).css("color", "red");
+        },
+        function() {
+            $(this).css('color', 'black');
+        }
+    );
 
 </script>
 </body>
