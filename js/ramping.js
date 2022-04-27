@@ -39,7 +39,7 @@
 //     }
 // }
 //
-// console.log(whichStringIsLonger("FALSE","truee"));
+// console.log(whichStringIsLonger("FALSE","true"));
 
 // function convertLowHighToObject(highLow) {
 //
@@ -191,3 +191,11 @@ var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "re
  //
  //     }
  // }
+
+ // function showMultiplicationTable(toTimesTable) {
+ //     for (let i = 0; i <= 10; i++) {
+ //         console.log(toTimesTable + " x " + (i) + " = " + toTimesTable * (i));
+ //     }
+ // }
+ //
+ // showMultiplicationTable(7);
