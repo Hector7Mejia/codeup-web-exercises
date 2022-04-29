@@ -1,17 +1,33 @@
-.nav-bar-container {
-    /*max-width: 750px;*/
-    margin: 0;
-    /* TODO: Make this a flex container and align it's items to the center*/
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width:576px) {
+    .title-div {
+        margin: 50px 75px 75px;
+        font-family: 'Open Sans', sans-serif;
+    }
 
+    .sa-jet-title {
+        font-size: x-large;
+
+    }
+
+    .nav-bar-container {
+        max-width: 150px;
+        max-height: 550px;
+        margin: 0;
+        /* TODO: Make this a flex container and align it's items to the center*/
+        display: flex;
+        flex-direction: column;
+        /*justify-content: flex-end;*/
+        /*align-self: center;*/
+    }
+
+    .nav-bar-tab {
+        /*justify-content: flex-end;*/
+        /*align-items: center;*/
+        width: fit-content;
+        margin: 50px;
+        border: none;
+    }
 }
-
-.nav-bar-tab {
-    /*justify-content: flex-end;*/
-    align-items: center;
-}
-
 /*.card {*/
 /*    background: rgba(255, 255, 255, 0.2);*/
 /*    margin: 20px;*/
