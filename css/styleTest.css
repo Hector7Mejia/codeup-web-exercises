@@ -6,10 +6,6 @@ body {
     color: whitesmoke;
 }
 
-body h1 {
-    text-align: center;
-}
-
 .card-container {
     position: absolute;
     left: 50%;
