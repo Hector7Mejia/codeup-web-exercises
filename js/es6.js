@@ -83,8 +83,7 @@ users.forEach(function(user) {
   // console.log(name); // 'codeup'
   // console.log(age); // 4
   // TODO: rewrite the assignment below to use template strings
-  developers.push('${name} 'email is ' ${email}. ${name} ' knows '  ${languages}.join(', ')')
-
+  developers.push(${name} 'email is ' ${email}, ${name} ' knows '  ${languages}.join(', '))
 });
    developers.push('${name}s email is ${email}');
 // const namer = 'codeup';

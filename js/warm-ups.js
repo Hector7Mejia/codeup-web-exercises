@@ -232,3 +232,12 @@ function sayHello(name) {
 // // TODO: Call the function 'isOdd' passing the variable 'random' as a parameter.
 //
 // isOdd(random);
+//
+// function foo(){
+//     for (var i=0; i<5 ; i++){
+//         console.log(i);
+//     }
+//     console.log(i);
+// }
+//
+// foo();
