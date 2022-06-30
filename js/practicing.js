@@ -34,15 +34,7 @@
 //
 // console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
 
-const person = { name: "Tim"};
-const student = { ID: "21", GPA: "3.0"};
-// const students = { ...person, ...student1, ...student, semester: '4'};
-let calculatedGPA = [];
-const student1 = {name: "One", ID: "1", GPA: 2.0};
-const student2 = {name: "Two", ID: "2", GPA: 4.0};
-const student3 = {name: "Three", ID: "3", GPA: 4.0};
-const student4 = {name: "Four", ID: "4", GPA: 2.4};
-let testArray = [student1, student2, student3, student4];
+
 // function myFunc(total, num) {
 //     return total + num;
 // }
@@ -64,10 +56,34 @@ let testArray = [student1, student2, student3, student4];
 // ];
 //
 // .reduce is using accumulator and object to specify what is happening to its paramater
-// function addGPA(testArray) {
-//     const sum = testArray.reduce((accumulator, object) => {
-//         return accumulator + object.GPA;
-//     }, 0);
-//     console.log(sum/testArray.length);
-// }
-// addGPA(testArray);
+const person = { name: "Tim"};
+const student = { ID: "21", GPA: "3.0"};
+// const students = { ...person, ...student, semester: '4'};
+let calculatedGPA = [];
+const student1 = {name: "One", ID: "1", GPA: "2.0"};
+const student2 = {name: "Two", ID: "2", GPA: "4.0"};
+const student3 = {name: "Three", ID: "3", GPA: "4.0"};
+const student4 = {name: "Four", ID: "4", GPA: "2.4"};
+let testArray1 = [student1, student2, student3, student4];
+//use a hash map to solve this
+function calculateGPA(testArray1) {
+    if(typeof testArray1.GPA != "number") {
+        testArray1.GPA.forEach(str => {
+            calculatedGPA.GPA.push(Number(str));
+        });
+        return calculatedGPA;
+    }
+    //used reduce to assign and "accumulator" to the objects in testArray.GPA. Parse float takes them object and makes them into floats before adding
+    const sum = testArray1.reduce((accumulator, object) => {
+        return accumulator + parseFloat(object.GPA);
+    }, 0);
+    console.log(sum);
+    console.log(sum/testArray1.length);
+}
+
+//In the following, write a program using the map function that squares the numbers in the array called notSquared. It contains random integers.
+
+// squared = notSquared.map(toSquare => toSquare * toSquare); //write solution in place of -1
+
+// calculateGPA(testArray1);
+
