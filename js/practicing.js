@@ -87,3 +87,11 @@ function calculateGPA(testArray1) {
 
 // calculateGPA(testArray1);
 
+// function banana2(banana) {
+//     return console.log("greeetings " + banana + " my fellow banana");
+// }
+//
+//   let bananaGreeting =  banana => console.log("greetings " + banana + " my fellow banana");
+//
+// bananaGreeting("georgie");
+
