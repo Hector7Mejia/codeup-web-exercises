@@ -20,3 +20,12 @@ b.right = e;
 c.left = f;
 // c.right = g;
 // d.left = h;
+
+const depthFirst = (root) => {
+    if(root === null) {
+        return [];
+    }
+    const leftValues = depthFirst(root.left);
+    const rightValues = depthFirst(root.right);
+    return  [ root.value, ...leftValues, ...rightValues ];
+};
